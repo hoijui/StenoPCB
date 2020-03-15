@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:stenopcb-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -30,7 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:stenopcb-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -812,7 +812,7 @@ L_COL_4
 Text Label 6500 6150 0    60   ~ 0
 L_COL_4
 $Comp
-L R R1
+L R-RESCUE-stenopcb R1
 U 1 1 5227330E
 P 1850 1250
 F 0 "R1" V 1930 1250 40  0000 C CNN
@@ -823,7 +823,7 @@ F 3 "~" H 1850 1250 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D25
+L LED-RESCUE-stenopcb D25
 U 1 1 52273328
 P 1850 1700
 F 0 "D25" H 1850 1800 50  0000 C CNN
@@ -838,7 +838,7 @@ GND
 Text Label 1850 1000 0    60   ~ 0
 LED
 $Comp
-L R R2
+L R-RESCUE-stenopcb R2
 U 1 1 5227334E
 P 2100 5250
 F 0 "R2" V 2180 5250 40  0000 C CNN
@@ -849,7 +849,7 @@ F 3 "~" H 2100 5250 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D26
+L LED-RESCUE-stenopcb D26
 U 1 1 52273354
 P 2100 5700
 F 0 "D26" H 2100 5800 50  0000 C CNN
@@ -1079,4 +1079,12 @@ Text Label 3900 4550 0    60   ~ 0
 L_COL_1
 Text Label 4550 5950 0    60   ~ 0
 L_ROW_2
+Wire Notes Line
+	800  4250 6950 4250
+Wire Notes Line
+	6950 4250 6950 7650
+Wire Notes Line
+	6950 7650 800  7650
+Wire Notes Line
+	800  7650 800  4250
 $EndSCHEMATC
